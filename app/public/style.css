@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Taviraj');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.container{
+    height:70%;
+    width:70%;
+}
+.background{
+    background-image: url("images/background.jpg");
+    height:100%;
+    width: 100%;
+}
+P{
+    font-family: 'Taviraj', serif;
+}
+h1{
+    font-family: 'Lobster', cursive;
+}
+.jumbotron{
+    background-color: grey;
+}
