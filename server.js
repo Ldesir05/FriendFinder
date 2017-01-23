@@ -7,8 +7,9 @@ var bodyParser = require('body-parser');
 //requiring the path module.
 var path = require('path');
 
-//creating to the port 3000.
-var PORT = 3000;
+//creating to the port 3000 this for local testing
+var PORT = process.env.PORT || 9000;
+
 
 //storing the express module into a vairable app.
 var app = express();
