@@ -8,8 +8,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 //creating to the port 9000 this for local testing
-app.set('port', (process.env.PORT || 5000));
-
+var PORT = process.env.PORT || 9000;
 
 //storing the express module into a vairable app.
 var app = express();
@@ -28,6 +27,6 @@ require('./app/routing/htmlRoutes.js')(app);
 require('./app/routing/apiRoutes.js')(app);
 
 //listing for the server connection
-app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
+app.listen(PORT, function(){
+    console.log('Server Connected to ' +  PORT)
 });
